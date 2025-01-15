@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(95, 88, 47);
+    background-color: rgb(187, 187, 189);
     color: rgb(212, 208, 208);
 }
 .container{
@@ -17,12 +17,13 @@ body{
 }
 h3{
     font-weight: 600;
+    color: rgb(51, 51, 51);
     font-family: Arial, Helvetica, sans-serif;
 }
 .calculatorBody{
    display: grid;
    grid-template-columns: repeat(4,6rem);
-   grid-template-rows: minmax(7rem,auto) repeat(5,6rem);
+   grid-template-rows: minmax(6rem,auto) repeat(5,6rem);
 }
 .span-two{
     grid-column: span 2;
@@ -33,10 +34,11 @@ h3{
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    padding: .75rem;
+    padding: 1rem;
     word-break: break-all;
     word-wrap: break-word;
     width: 384px;
+    height: 110px;
 }
 .operationsDisplay .previous-operand{
     color: rgba(255,255,255,0.75);
@@ -55,5 +57,4 @@ button{
 }
 button:hover,button:focus{
     background-color: #494949;
-    border: none;
 }
